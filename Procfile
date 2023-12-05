@@ -1,0 +1,1 @@
+web: voila --port=$PORT --no-browser --strip_sources=True --enable_bextensions=True BIOS0030 server2.0/notebook files/All_tests_launcher/all_tests_launcher.ipynb

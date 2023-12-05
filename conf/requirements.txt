@@ -1,0 +1,8 @@
+voila
+numpy
+pandas
+matplotlib
+ipywidgets
+jupyter_ui_poll
+IPython
+requests
