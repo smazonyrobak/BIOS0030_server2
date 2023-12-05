@@ -10,7 +10,7 @@ uclbiosapp = Flask(__name__)
 voila_app = voila.app.Voila()
 voila_app.initialize(argv=[
     '--enable_nbextensions=True',
-    '--VoilaConfiguration.trust_notebooks=True'
+    #'--VoilaConfiguration.trust_notebooks=True'
 ])
 os.chdir(os.path.join(os.getcwd(), '..'))
 @uclbiosapp.route('/')
