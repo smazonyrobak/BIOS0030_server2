@@ -1,0 +1,10 @@
+{
+  "VoilaConfiguration": {
+    "tornado_settings": {
+      "xsrf_cookies": false
+    },
+    "file_allowlist": [
+      "^.*\\.(ipynb|png|jpg|gif|svg|json|csv)$"
+    ]
+  }
+}
