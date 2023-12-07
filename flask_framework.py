@@ -1,4 +1,4 @@
-from flask import Flask, Response
+from flask import Flask, redirect
 import os
 from voila.app import Voila
 
@@ -6,6 +6,7 @@ uclbiosapp = Flask(__name__)
 root_dir = os.getcwd()
 os.chdir(root_dir)
 
+voila_base_url = "https://uclbios-c7accae8eb34.herokuapp.com/"
 def run_and_display_notebook(file):
     notebook_path = (f'{file}/{file}.ipynb')
     voila_readout = Voila(notebook_path = notebook_path)
