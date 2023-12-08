@@ -11,4 +11,4 @@ def spatial():
     return redirect("http://localhost:8866/voila/render/Spatial_Test/Spatial_Test.ipynb")
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=7999)
+    app.run(host='0.0.0.0', port=8000)
