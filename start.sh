@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Start Voilà in the background
-voila --no-browser --port=8866 --show_tracebacks=True --VoilaConfiguration.file_allowlist='^.*\.(ipynb|png|jpg|gif|svg|json|csv)$' All_tests_launcher/All_tests_launcher.ipynb &
+voila --no-browser --port=8866 --show_tracebacks=True --VoilaConfiguration.file_allowlist='^.*\.(ipynb|png|jpg|gif|svg|json|csv)$' &
 
 # Set the FLASK_APP environment variable
 export FLASK_APP=flask_framework.py
