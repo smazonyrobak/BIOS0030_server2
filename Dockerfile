@@ -10,11 +10,15 @@ COPY . .
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Make port 8000 available to the world outside this container
-EXPOSE 8000
+# Copy the start script and make it executable
+COPY start.sh .
+RUN chmod +x start.sh
+
+# Make ports 8000 and 8866 available to the world outside this container
+EXPOSE 8000 8866
 
 # Define environment variable
 ENV NAME World
 
-# Run app.py when the container launches
-CMD ["voila", "--no-browser", "--port=5000", "All_tests_launcher/All_tests_launcher.ipynb"]
+# Run start.sh when the container launches
+CMD ["./start.sh"]
