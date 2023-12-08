@@ -21,4 +21,5 @@ EXPOSE 8000 8866
 ENV NAME World
 
 # Run start.sh when the container launches
-CMD ["./start.sh"]
+CMD ["bash", "./start.sh"]
+
