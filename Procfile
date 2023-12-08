@@ -1,2 +1,2 @@
 web: python app.py
-voila: voila --port=$PORT --no-browser --Voila.ip=0.0.0.0 --show_tracebacks=True --VoilaConfiguration.file_allowlist='^.*\.(ipynb|png|jpg|gif|svg|json|csv)$' All_tests_launcher/All_tests_launcher.ipynb
+voila: voila --port=$PORT --no-browser --Voila.ip=0.0.0.0 --show_tracebacks=True --VoilaConfiguration.file_allowlist='^.*\.(ipynb|png|jpg|gif|svg|json|csv)$'
